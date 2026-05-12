@@ -1,4 +1,4 @@
-
+// dotnet run /Users/alexwan/Projects/exceptions-Smalltalk1357/exercises/5.chain.cs 
 int Divide(int a, int b)
 {
     int returnValue;
