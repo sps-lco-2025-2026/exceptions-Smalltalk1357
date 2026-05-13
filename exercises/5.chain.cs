@@ -1,14 +1,13 @@
 // dotnet run /Users/alexwan/Projects/exceptions-Smalltalk1357/exercises/5.chain.cs 
 int Divide(int a, int b)
 {
-    int returnValue;
     try
     {
-        return = a / b;
+        return a / b;
     }
-    catch (DivideByZeroException)
-    { 
-        throw new ArgumentException("Denominator cannot be zero")
+    catch (DivideByZeroException ex)
+    {
+        throw new ArgumentException("Denominator cannot be zero", ex);
     }
 }
 
@@ -24,8 +23,10 @@ int ReadAndDivide()
     }
     catch (ArgumentException e)
     {
-        Console.WriteLine("Error: ", e.message);
+        Console.Write("ArgumentException Error: ");
+        Console.WriteLine(e.Message);
     }
+    return 0;
 }
 
-Console.WriteLine(ReadAndDivide());
+Console.WriteLine("Return value: " + ReadAndDivide());
