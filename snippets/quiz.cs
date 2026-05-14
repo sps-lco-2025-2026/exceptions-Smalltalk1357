@@ -1,15 +1,3 @@
-
-class InvalidScoreException : Exception
-{
-    public InvalidScoreException() { }
-
-    public InvalidScoreException(string message)
-        : base(message) { }
-
-    public InvalidScoreException(string message, Exception inner)
-        : base(message, inner) { }
-}
-
 // --- program starts here ---
 
 Console.Write("Enter score (0-100): ");
@@ -25,4 +13,15 @@ try
 catch (InvalidScoreException e)
 {
     Console.WriteLine($"Domain error: {e.Message}");
+}
+
+class InvalidScoreException : Exception
+{
+    public InvalidScoreException() { }
+
+    public InvalidScoreException(string message)
+        : base(message) { }
+
+    public InvalidScoreException(string message, Exception inner)
+        : base(message, inner) { }
 }
