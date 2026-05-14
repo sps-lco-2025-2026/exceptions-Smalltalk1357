@@ -7,14 +7,14 @@ try
 }
 catch (FormatException)
 {
-    Console.WriteLine("Error: The value you input is not a valid number")
+    Console.WriteLine("Error: The value you input is not a valid number");
 }
 catch (IndexOutOfRangeException)
 {
-    Console.WriteLine("Error: The index you input is out of range")
+    Console.WriteLine("Error: The index you input is out of range");
 }
 catch (Exception)
 {
-    Console.WriteLine("Error: Something unexpected went wrong")
+    Console.WriteLine("Error: Something unexpected went wrong");
 }
 

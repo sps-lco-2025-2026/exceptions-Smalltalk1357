@@ -15,13 +15,13 @@ try
 }
 catch (FormatException)
 {
-    Console.WriteLine("Error: The value you input is not a valid number")
+    Console.WriteLine("Error: The value you input is not a valid number");
 }
 catch (Exception)
 {
-    Console.WriteLine("Error: Something unexpected went wrong")
+    Console.WriteLine("Error: Something unexpected went wrong");
 }
 finally
 {
-    Console.WriteLine("Thank you for using the program")
+    Console.WriteLine("Thank you for using the program");
 }

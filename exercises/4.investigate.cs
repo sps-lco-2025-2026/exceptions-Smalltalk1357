@@ -21,7 +21,7 @@ try
 }
 catch (NullReferenceException)
 {
-    Console.WriteLine("Error: attempted operation on null reference");
+    Console.WriteLine("Error: Attempted operation on null reference");
 }
 catch (Exception)
 {

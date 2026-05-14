@@ -7,7 +7,14 @@ class TemperatureException : Exception
 
 class AbsoluteZeroException : TemperatureException
 {
+    public decimal Temperature { get; }
     decimal AbsoluteZero = -273.15m;
+    
+    public AbsoluteZeroException(string message, decimal temperature)
+        : base($"Cannot convert temperature [{temperature}] below absolute zero [{AbsoluteZero}ºC]")
+    {
+        Temperature = temperature;
+    }
 }
 
 // program below...
